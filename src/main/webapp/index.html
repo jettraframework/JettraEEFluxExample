@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JettraEEFluxExample - Jakarta EE &amp; JettraFlux Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="badge">Jakarta EE 11 / MicroProfile / JettraFlux</span>
+            <h1>JettraEEFlux Showcase Portal</h1>
+            <p class="subtitle">Servidor ultraligero JettraEE con Virtual Threads (Java 25) y suite reactiva JettraFlux</p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h2>JettraFlux UI</h2>
+                <p>Suite completa de interfaces reactivas, formularios dinámicos, catálogos y widgets.</p>
+                <div class="card-links">
+                    <a href="login" class="btn btn-primary">Iniciar Sesión</a>
+                    <a href="dashboard" class="btn btn-secondary">Dashboard</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h2>Jakarta REST API</h2>
+                <p>Servicios RESTful completos con CDI 4.1 y validación Jakarta.</p>
+                <div class="card-links">
+                    <a href="api/persons" class="btn btn-primary">API Persons (JSON)</a>
+                    <a href="q/swagger-ui" class="btn btn-secondary">Swagger UI</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🩺</div>
+                <h2>MicroProfile Health &amp; Metrics</h2>
+                <p>Sondas Kubernetes Liveness / Readiness y métricas Prometheus en tiempo real.</p>
+                <div class="card-links">
+                    <a href="q/health" class="btn btn-secondary">Health (/q/health)</a>
+                    <a href="q/metrics" class="btn btn-secondary">Métricas (/q/metrics)</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>100% Compatible con <strong>JettraEE</strong>, <strong>Payara Micro</strong>, <strong>Helidon</strong> y <strong>WildFly</strong>.</p>
+        </footer>
+    </div>
+</body>
+</html>
