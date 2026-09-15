@@ -30,6 +30,12 @@
         <microprofile.restclient.version>3.0.1</microprofile.restclient.version>
         <microprofile.jwt.version>2.1</microprofile.jwt.version>
         <junit.version>5.10.2</junit.version>
+        <jettra.json.version>1.0.0</jettra.json.version>
+        <jettra.test.version>1.0.0</jettra.test.version>
+        <jettra.jwt.version>1.0.0</jettra.jwt.version>
+        <jettra.rules.version>1.0.0</jettra.rules.version>
+        <jettra.flux.version>1.0.0-SNAPSHOT</jettra.flux.version>
+        <jettra.annotation.version>1.0.0</jettra.annotation.version>
     </properties>
 
     <dependencies>
@@ -41,6 +47,13 @@
         </dependency>
 
         <!-- Jakarta EE Specifications -->
+          <!-- Jakarta Faces Specification (opcional para Web Profile) -->
+        <dependency>
+            <groupId>jakarta.faces</groupId>
+            <artifactId>jakarta.faces-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>jakarta.ws.rs</groupId>
             <artifactId>jakarta.ws.rs-api</artifactId>
@@ -108,20 +121,20 @@
 
         <!-- Motor de Reglas de Negocio JettraRules -->
         <dependency>
-            <groupId>io.jettra</groupId>
+       <groupId>com.github.jettraframework</groupId>
             <artifactId>JettraRules</artifactId>
             <version>${jettra.version}</version>
         </dependency>
 
         <!-- Motor JSON ultrarrápido JettraJSON -->
         <dependency>
-            <groupId>io.jettra</groupId>
+            <groupId>com.github.jettraframework</groupId>
             <artifactId>JettraJSON</artifactId>
             <version>${jettra.version}</version>
         </dependency>
 
         <!-- Tokens de Seguridad JettraJWT -->
-<!--        <dependency>
+        <!--        <dependency>
             <groupId>io.jettra</groupId>
             <artifactId>JettraJWT</artifactId>
             <version>${jettra.version}</version>
@@ -129,16 +142,16 @@
 
         <!-- Anotaciones de JettraFramework -->
         <dependency>
-            <groupId>io.jettra</groupId>
+            <groupId>com.github.jettraframework</groupId>
             <artifactId>JettraAnnotation</artifactId>
-            <version>${jettra.version}</version>
+            <version>${jettra.annotation.version}</version>
         </dependency>
 
         <!-- Módulo de Testing -->
         <dependency>
-            <groupId>io.jettra</groupId>
+            <groupId>com.github.jettraframework</groupId>
             <artifactId>JettraTest</artifactId>
-            <version>${jettra.version}</version>
+            <version>${jettra.test.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -149,13 +162,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Jakarta Faces Specification (opcional para Web Profile) -->
-        <dependency>
-            <groupId>jakarta.faces</groupId>
-            <artifactId>jakarta.faces-api</artifactId>
-            <version>4.0.1</version>
-            <scope>provided</scope>
-        </dependency>
+      
     </dependencies>
 
     <build>
